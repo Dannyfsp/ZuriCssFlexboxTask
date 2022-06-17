@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ccsgrid</title>
+    <style>
+        .container{
+            box-sizing: border-box;
+            padding: 2rem;
+
+        }
+        .box{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-area: auto;
+            grid-gap: 5px;
+            margin: 2rem;
+        }
+
+        .box1{
+            background-color: orange;
+            min-height: 10rem;
+            min-width: 70%;
+        }
+        .box2{
+            background-color: yellow;
+            min-height: 10rem;
+            min-width: 30%;
+        }
+        .box3{
+            background-color: green;
+            min-height: 10rem;
+            max-width: 50%;
+        }
+        .box4{
+            background-color: blue;
+            min-height: 5rem;
+            min-width: 50%;
+        }
+        .box4{
+            background-color: blue;
+            min-height: 5rem;
+            min-width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="box1">one</div>
+            <div class="box2">two</div>
+            <div class="box3">three</div>
+            <div class="box4">four</div>
+            <div class="box4">five</div>
+        </div>
+    </div>
+</body>
+</html>

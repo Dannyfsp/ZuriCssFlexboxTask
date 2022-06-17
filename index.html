@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card design</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+        :root{
+            --bright-orange: hsl(31, 77%, 52%);
+            --dark-cyan: hsl(184, 100%, 22%);
+            --very-dark-cyan: hsl(179, 100%, 13%);
+        }
+        body{
+            font-size: 15px;
+            padding: 40px;
+            background-color: black;
+
+        }
+        .container{
+            margin: 20px 40px;
+            background-color: white;
+
+        }
+        h1{
+            font-family: 'Big Shoulders Display', cursive;
+            font-weight: 700;
+            color: aliceblue;
+        }
+        ul{
+           display: flex;
+           margin: 5rem;
+           padding: 2rem;
+        }
+        .product1, .product2, .product3{
+            list-style: none;
+            min-height: 25rem;
+            max-width: 17rem;
+            padding : 2.5rem;
+        }
+        .product1{
+            background-color: var(--bright-orange);
+        }
+        .product2{
+            background-color: var(--dark-cyan);
+        }
+        .product3{
+            background-color: var(--very-dark-cyan);
+        }
+        p{
+            font-family: 'Lexend Deca', sans-serif;
+            color: white;
+        }
+        .btn1, .btn2, .btn3{
+            margin-bottom: 2rem;
+            border: 2px solid hsl(0, 0%, 95%);
+            padding:12px 18px;
+            border-radius:30px;
+            margin-top: 5rem;
+            font-family: 'Lexend Deca', sans-serif;
+        }
+        .btn1{
+            color:hsl(31, 77%, 52%);
+        }
+        .btn2{
+            color:hsl(184, 100%, 22%);
+        }
+        .btn3{
+            color:hsl(179, 100%, 13%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">        
+        <ul>
+            <li class="product1">
+                <img src="icon-sedans.svg" alt="">
+                <h1>SEDANS</h1>
+                <p>Choose a sedan for it's affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip.</p>
+                <button class="btn1"><b>Learn More</b></button>
+             </li>
+            <li class="product2">
+                <img src="icon-suvs.svg" alt="">
+                <h1>SUVS</h1>
+                <p>Take an SUV for it's spacious interior, power, and versatility. Perfect for your next family vacation and off-road adventures.</p>
+                <button class="btn2"><b>Learn More</b></button>
+            </li>
+            <li class="product3">
+                <img src="icon-luxury.svg" alt="">
+                <h1>LUXURY</h1>
+                <p>Cruise in the best car brands without the bloated prices. Enjoy the enhancement comfort of a luxury rental and arrive in style.</p>
+                <button class="btn3"><b>Learn More</b></button>
+            </li>           
+        </ul>
+    </div>
+</body>
+</html>
